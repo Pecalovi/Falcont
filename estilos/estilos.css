@@ -107,13 +107,16 @@
     font-style: italic;
 }
 
-/* Opcional: establecer Poppins como fuente base del sitio */
+html, body{
+height: 100%;
+margin: 0;
+padding: 0;
+}
+
 body {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
-    margin: 0;
-    padding: 0;
 
     display: flex;
     flex-direction: column;
@@ -121,63 +124,69 @@ body {
     justify-content: flex-start;
     align-items: stretch;
     align-content: flex-start;
+    min-height: 100%;
 }
+
+/* CABECERA */
 
 header {
     height: 80px;
+    flex-shrink: 0;
     display: flex;
     flex-direction: row;
-    align-items: center;          /* Centra verticalmente */
+    align-items: center;
     justify-content: space-between;
     padding: 0 20px;
+    background-color: #005700ff;
+}
+header img {
+    height: 40px;
+    width: auto;
 }
 
-/* El menú del medio ocupa todo el espacio restante */
+/* MENU DE CABECERA */
+
 .menu {
     justify-content: flex-end;
-    flex: 1;                      /* <- Esto hace que crezca */
-    margin: 0 30px;               /* Espaciado lateral */
-    display: flex;                /* Para alinear los enlaces dentro */
+    flex: 1;
+    margin: 0 30px;
+    display: flex;
     align-items: center;
-    gap: 30px;                    /* Espacio entre enlaces */
+    gap: 30px;                    
 }
-
-/* Enlaces del menú */
 .menu a {
     text-decoration: none;
-    color: #005700ff;
+    color: #ffffff;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
 }
 
-header img {
-    height: 40px;      /* Ajusta la altura según tu header */
-    width: auto;       /* Mantiene la proporción del ancho */
+.main{
+    flex:1;
+    background-color: #f2f2f2ff;
 }
 
-.cuerpo {
-    flex: 1;
-    background-color: #f8f8f8;
-}
+
+/* FOOTER */
 
 footer {
-    height: 80px;
     display: flex;
     flex-direction: row;
-    align-items: center;          /* Centra verticalmente */
+    align-items: center;
     justify-content: space-around;
-    padding: 0 20px;
-    
-}
-h3{
-    color: #005900;
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style:normal;
+    background-color: #005700ff;
+    color: #ffffff;
+    padding-bottom: 30px;
 }
 .div_footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
+}
+.div_footer a{
+    text-decoration: none;
+    color: #ffffff;
+    padding-bottom: 5px;
 }
