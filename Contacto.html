@@ -11,31 +11,26 @@
 <link
 href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
 rel="stylesheet">
-<link rel="stylesheet" href="estilos/trabaja.css">
+<link rel="stylesheet" href="estilos/Formularios.css">
 
 </head>
 <body>
 
-<form class="form-container">
+  <div class="form-container">
+    <h2>Contáctanos</h2></br>
+    <p>Si necesitas más información o tienes alguna duda, estaremos encantados de atenderte. Rellena este formulario para poder ponernos en contacto contigo.</p></br></br>
+    <form class="form">
+      <input type="text" id="fname" class="inputcont" name="funame" placeholder="Nombre"></br>
+      <input type="text" id="femail" class="inputcont" name="femail" placeholder="Correo"></br>
+      <input type="text" id="fasunto" class="inputcont" name="fasunto" placeholder="Asunto"></br>
+  
+      <label for="femail">Mensaje</label></br>
+      <textarea id="fmsg" class="inputcont" name="Text1"  rows="5"></textarea></br></br>
+  
+      <input type="submit" value="Enviar">
+  </form>
 
-    <legend>Contáctanos</legend></br>
-   <label>Si necesitas más información o tienes alguna duda, estaremos encantados de atenderte. Rellena este formulario para poder ponernos en contacto contigo.</label></br></br>
-    <label for="fname" >Tu nombre</label></br>
-    <input type="text" id="fname" class="inputcont" name="funame" placeholder="Nombre"></br>
+  </div>
 
-    <label for="femail">Correo</label></br>
-    <input type="text" id="femail" class="inputcont" name="femail" placeholder="Correo"></br>
-
-    <label for="fasunto">Asunto</label></br>
-    <input type="text" id="fasunto" class="inputcont" name="fasunto" placeholder="Asunto"></br>
-
-    <label for="femail">Mensaje</label></br>
-    <textarea id="fmsg" class="inputcont" name="Text1"  rows="5"></textarea></br></br>
-
-    <input type="submit" value="Enviar">
-</form>
-
-    
-   
 </body>
 </html>
