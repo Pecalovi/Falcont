@@ -126,7 +126,29 @@ body {
     align-content: flex-start;
     min-height: 100%;
     overflow-x: hidden;
-    
+}
+
+.botones {
+    border: none;
+    background-color: #005900ff;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+h1 {
+    color: #005700ff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    margin-top: 30px;
+}
+
+main {
+    flex: 1;
+    background-color: #f2f2f2ff;
 }
 
 /* CABECERA */
@@ -171,19 +193,12 @@ header img {
     font-style: normal;
 }
 
-.main {
-    flex: 1;
-    background-color: #f2f2f2ff;
-}
-
 #imagen_index {
     background-image: url('/src/index_running.jpg');
     background-size: cover;
     background-position: center;
     background-color: rgba(0, 0, 0, 0.5);
-    /* color negro con 50% opacidad */
     background-blend-mode: darken;
-    /* mezcla el color y la imagen */
     height: 300px;
     display: flex;
     justify-content: center;
@@ -192,14 +207,6 @@ header img {
 
 #imagen_index h1 {
     color: white;
-}
-
-h1 {
-    color: #005700ff;
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    text-align: center;
 }
 
 #container_eventos {
@@ -255,13 +262,7 @@ h1 {
     color: grey;
 }
 
-.inscribirse_evento{
-    border: none;
-    background-color: #005900ff;
-    color: white;
-    padding: 8px 16px;
-    border-radius: 4px;
-    cursor: pointer;
+#inscribirse_evento {
     margin-left: 50px;
 }
 
@@ -306,11 +307,41 @@ footer .reservado {
     text-align: center;
 }
 
+/*Para estilizar página de Sobre Nosotros*/
+.container_conocenos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+#descripcion_conocenos {
+    margin-inline: 20%;
+    margin-block: 30px;
+}
+#descripcion_conocenos p {
+    margin-block: 10px;
+    text-align: justify;
+}
+
+#boton_conocenos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 3em;
+}
+#boton_conocenos button {
+    margin-bottom: 0;
+}
+
 /*Para estilizar página de mantenimiento*/
-.alert-container{
+.alert_container {
     border-radius: 1em;
     border-style: solid;
-    border-color:  #005900ff;
+    border-color: #005900ff;
     border-width: 1px;
     padding-inline: 2em;
     margin-inline: 30%;
@@ -321,17 +352,12 @@ footer .reservado {
     align-items: center;
     align-content: center;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    
 }
-#halert{
-    margin-top: 1em;
-}
-#volv{
-    border: none;
-    background-color: #005900ff;
-    color: white;
-    padding: 8px 16px;
-    border-radius: 4px;
-    cursor: pointer;
+
+#boton_inicio{
     margin-bottom: 2em;
+}
+
+#halert {
+    margin-top: 1em;
 }
