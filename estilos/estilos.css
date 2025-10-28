@@ -126,34 +126,40 @@ body {
     align-content: flex-start;
     min-height: 100%;
     overflow-x: hidden;
+    
 }
 
 /* CABECERA */
 
 header {
-    height: 80px;
+    height: 60px;
     flex-shrink: 0;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    align-content: center;
     padding: 0 20px;
     background-color: #005700ff;
 }
 
 header img {
-    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 25px;
     width: auto;
 }
 
 /* MENU DE CABECERA */
 
 .menu {
+    display: flex;
+    flex-direction: row;
     justify-content: flex-end;
+    align-items: center;
     flex: 1;
     margin: 0 30px;
-    display: flex;
-    align-items: center;
     gap: 30px;
 }
 
@@ -205,6 +211,7 @@ h1 {
     align-content: center;
     padding: 10px;
     margin: 20px;
+    margin-bottom: 100px;
 }
 
 .evento_index {
@@ -268,7 +275,7 @@ footer {
     justify-content: space-around;
     align-items: flex-start;
     padding: 40px 60px;
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
 footer .div_footer {
@@ -314,7 +321,17 @@ footer .reservado {
     align-items: center;
     align-content: center;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    
 }
 #halert{
     margin-top: 1em;
+}
+#volv{
+    border: none;
+    background-color: #005900ff;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 2em;
 }
