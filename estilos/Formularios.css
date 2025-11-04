@@ -167,3 +167,14 @@ h3 {
     transform: scale(1.04);
     backdrop-filter: blur(15px);
 }
+#vehitxt{
+    display: flex;
+    justify-content: center;
+}
+#vehiculo{
+    display: flex;
+    justify-content: center;
+}
+#diversidad{
+    font-size: small;
+}

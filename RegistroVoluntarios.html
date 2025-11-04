@@ -51,8 +51,11 @@
       <input type="tel" id="fphone" name="fphone" placeholder="Número de teléfono" pattern="[0-9]{9}" required>
       <input type="email" id="femail" name="femail" placeholder="Correo" required>
 
+      <!-- ACCESO -->
+      <input type="password" id="fpwd" name="fpwd" placeholder="Contraseña" required>
+
       <!-- INFORMACIÓN ADICIONAL -->
-      <label>¿Tienes vehículo?</label>
+      <label id="vehitxt">¿Tienes vehículo?</label>
       <div id="vehiculo">
         <input type="radio" id="vehiculo-si" name="vehiculo" value="si" required>
         <label for="vehiculo-si">Sí</label>
@@ -60,11 +63,10 @@
         <label for="vehiculo-no">No</label>
       </div>
 
-      <label>En caso de tener alguna discapacidad, indicalo debajo</label>
-      <input type="text" id="fdisc" name="fdisc" placeholder="Indica aqui si tienes alguna discapacidad">
+      <label id="diversidad">En caso de tener alguna diversidad funcional, indícalo debajo.
+      </label>
+      <input type="text" id="fdisc" name="fdisc" placeholder="Indícanos tu caso o tus necesidades.">
 
-      <!-- ACCESO -->
-      <input type="password" id="fpwd" name="fpwd" placeholder="Contraseña" required>
 
       <input type="submit" value="Registrar">
 
