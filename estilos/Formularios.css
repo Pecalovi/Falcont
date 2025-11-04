@@ -36,6 +36,7 @@ body {
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.25);
     width: 50%;
+    max-width: 500px; 
     height: 40%;
 }
 
@@ -97,12 +98,29 @@ input[type="radio"] {
     font-family: "Poppins", sans-serif;
 }
 
+input[type="file"]{
+    background-color: transparent;
+}
+
+input[type="file"]::file-selector-button {
+    border: 1px rgb(86, 86, 86) solid;
+    background-color: transparent;
+    color: rgb(86, 86, 86);
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-family: "Poppins", sans-serif;
+    font-weight: 7300;
+}
+
 h2 {
     text-align: center;
     margin-bottom: 30px;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
+    color: black;
 }
 
 h3 {
@@ -177,4 +195,16 @@ h3 {
 }
 #diversidad{
     font-size: small;
+}
+
+/* TRABAJA CON NOSOTROS */
+
+#TrabajaNosotros{
+    width: 100%;
+    gap: 30px;
+}
+
+.logo{
+    width: 30%;
+    max-width: 400px;
 }
