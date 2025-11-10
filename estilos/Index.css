@@ -2,7 +2,7 @@
 /* INDEX.HTML */
 
 #imagen_index {
-    background-image: url('src/index_running.jpg');
+    background-image: url('../src/index_running.jpg');
     background-size: cover;
     background-position: center;
     background-color: rgba(0, 0, 0, 0.5);
